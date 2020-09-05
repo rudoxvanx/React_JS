@@ -21,7 +21,7 @@ lo que esta dentro del parentesis*/
 const getUser = () => ({
         uid:'ABC123',
         username:'El rudo'
-    });
+});
 
 console.log(getUser());
 
@@ -34,12 +34,14 @@ console.log(user);
     3-Pruebar
 */
 
+/* RETURN IMPLICITO */
 function getUsuarioActivo(nombre){
     return {
         uid:'ABC567',
         username:nombre
     }
 };
+
 
 const usuarioActivo = getUsuarioActivo('Rodolfito');
 console.log(usuarioActivo);
