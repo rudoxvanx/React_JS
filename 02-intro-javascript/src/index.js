@@ -1,19 +1,55 @@
-/*IMPORT / EXPORT*/
-
-//Exportacion por defecto y exportación individual
-import heroes,{owners} from './data/heroes';
-
-const getHeroeById = (id) => { (heroes.find(heroe => heroe.id === id));}
-const getHeroeByOwner = (owner) => heroes.filter(heroe => heroe.owner === owner);
-
-console.log(owners);
-
-/* FIND VS FILTER */
-
-/* FILTER -- Filtra un conjunto de datos
-   FIND -- Encuentra la primer coincidencia de 
-           un elemento
+/*  PROMESAS 
+    No permite llevar acabo una tarea y posteriormente
+    notificar el termino de la misma.
 */
-console.log(getHeroeByOwner('DC'));
 
 
+/*La naturaleza de las promesas es que son asincronas,
+  primero se va ejecutar todo lo que es sincrono o secuencial
+  
+  Se maneja la pila de tareas de javascript que nos apila 
+  el código secuencial.
+*/
+
+import {getHeroeById,getHeroeByOwner} from './bases/08-imp-exp'
+
+/*const promesa = new Promise( (resolve,reject) => {
+    setTimeout( () => {
+        //console.log('2 segundos después');
+        const heroe = getHeroeById(2);
+        //console.log(heroe);
+        //resolve(heroe);
+        reject('No se pudo encontrar el héroe');
+    }, 2000 );
+
+});
+
+promesa.then((heroe)=> {
+    console.log('heroe',heroe);
+})
+.catch(err => console.warn(err))*/
+
+const getHeroeByIdAsync =(id)=>{
+    const promesa = new Promise( (resolve,reject) => {
+        setTimeout( () => {
+            //console.log('2 segundos después');
+            const heroe = getHeroeById(id);
+            //console.log(heroe);
+            if(heroe){
+                resolve(heroe);
+            }else{
+                reject('No se pudo encontrar el héroe');
+            }
+        }, 2000 );
+    
+    });
+
+    return promesa;
+    
+}
+
+getHeroeByIdAsync(11)
+    //.then(heroe=> console.log('Heroe',heroe))
+    //.catch(err => console.warn(err))
+    .then(console.log)
+    .catch(console.warn)
