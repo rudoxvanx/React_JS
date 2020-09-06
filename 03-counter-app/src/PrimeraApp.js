@@ -11,9 +11,19 @@ A los del tipo funcion se les llama funtional components
 estos ya admiten estados*/
 
 const PrimeraApp = () => {
+    /*const saludo = {
+        nombre:'Rudolf',
+        edad:27
+    };*/
+
+    const saludo = 'Hola mundo';
+
+    /*Dentro de las llaves se imprime codigo JS que retorne un valor
+    no cualquier valor*/
     return ( 
             <>
-              <h1>Hola mundo</h1> 
+              {/*<pre>{JSON.stringify(saludo,null,3)}</pre>*/}
+              <h1>{saludo}</h1>
               <p>Este es mi parrafo</p>
             </>
             
