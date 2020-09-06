@@ -10,14 +10,15 @@ funcion.
 A los del tipo funcion se les llama funtional components
 estos ya admiten estados*/
 
-const PrimeraApp = () => {
+const PrimeraApp = ({saludo ='Hola mundo'}) => {
+
     /*const saludo = {
         nombre:'Rudolf',
         edad:27
     };*/
 
-    const saludo = 'Hola mundo';
-
+    //const saludo = 'Hola mundo';
+    //console.log(props);
     /*Dentro de las llaves se imprime codigo JS que retorne un valor
     no cualquier valor*/
     return ( 
