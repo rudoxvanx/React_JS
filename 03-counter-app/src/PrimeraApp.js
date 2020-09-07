@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 
 //irm + tab --> Nos importa de una manera más rápida
@@ -10,7 +11,11 @@ funcion.
 A los del tipo funcion se les llama funtional components
 estos ya admiten estados*/
 
-const PrimeraApp = ({saludo ='Hola mundo'}) => {
+const PrimeraApp = ({saludo}) => {
+
+    /*if(!saludo){
+        throw new Error('El saludo no es necesario');
+    }*/
 
     /*const saludo = {
         nombre:'Rudolf',
@@ -35,4 +40,8 @@ const PrimeraApp = ({saludo ='Hola mundo'}) => {
         );
 }
 
+PrimeraApp.propTypes = {
+    saludo:PropTypes.string.isRequired
+
+}
 export default PrimeraApp;
