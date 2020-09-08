@@ -9,7 +9,7 @@ import './index.css';
 const divRoot = document.querySelector('#root');
 
 //ReactDOM.render(<PrimeraApp saludo="Hola mundo" valor={12345}  /> , divRoot);
-ReactDOM.render(<CounterApp value={12345}/>,divRoot);
+ReactDOM.render(<CounterApp value={10}/>,divRoot);
 
 
 /*Usamos REACTDOM para renderizar ya que este nos permite
