@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 const CounterApp = ({value = 10}) => {
 
+    
     //const [ nombre,setNombre ] = useState('Goku');
     //console.log(nombre,setNombre);
     //const state = useState();
