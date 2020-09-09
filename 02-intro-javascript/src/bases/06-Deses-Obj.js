@@ -26,7 +26,10 @@ console.log(edad);
 console.log(clave);
 
 
-
+/*En la funcion useContex el parametro que se pasa
+ se desestructurara y el valor de la propiedad rango 
+ tendra un valor por defecto
+ */ 
 const useContext = ({nombre,edad,clave,rango = 'Capitán'}) => {
     //console.log(nombre,edad,rango);
 
