@@ -1,0 +1,71 @@
+/*PRUEBAS UNITARIAS*/
+
+Dos tipos las unitarias y las de integración.
+Unitarias: Enfocadas en pequeñas funcionalidades
+Integración: Enfocadas en como reaccionan varias piezas
+	     en conjunto.
+
+Caracteristicas de las pruebas.
+
+1-Faciles de escribir
+2-Faciles de leer
+3-Confiables
+4-Rapidas
+5-Principalmente unitarias
+
+AAA-
+Arrange (Arreglar): Paso en el cual establecemos el estado 
+		    inicial sujeto a probar.
+		    --Inicialización de variables
+		    --Importaciones necesarias
+		    --Preparación del ambiente
+
+Act (Actuar): Aplicacimos acciones o estímulos.
+	      --Llamar métodos
+	      --Simular clicks
+	      --Realizar acciones sobre el paso anterior
+
+Assert (Afirmar): Observar el comportamiento resultante
+		  --Son los resultados esperados
+		  --Ejem Que algo cambie, algo incremente o
+		    bien que no suceda nada.
+
+
+/*****MITOS******/
+--Hacen que mi aplicación no tenga errores --> Falso porque
+  estan expuestas a que un humano se equivo al escribirlas
+ 
+--Las pruebas pueden fallar --> Expuestas a falsos positivos
+  el programa puede funcionar o no y aun así puede pasar la 
+  prueba.
+
+--Hacen más lenta mi aplicación --> Las pruebas corren en la
+  parte local de desarrollo no en producción. Bundle para 
+  desplegar la aplicación.
+
+--Perdida de tiempo --> Solo son perdida de tiempo cuando
+  son probadas para cosas que no tienen sentido probar. Ejem.
+  probar paquetes o librerias ya que puede que estas ya hayan
+  sido probadas por el creador de la libreria o paquete.
+
+  Más bien podriamos probar la interación o la reacción que 
+  tiene esta con alguno de mis módulos o como se comporta.
+
+--Hay que probar todo --> No es factible ya que tendriamos
+  que probar todo y consumiria mas tiempo del que se ocupo
+  para programar la aplicación.
+
+  Es más factible probar la RUTA CRITICA DE LA APLICACION
+
+
+
+
+	
+
+
+
+
+
+
+
+
