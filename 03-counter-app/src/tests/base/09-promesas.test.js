@@ -6,7 +6,8 @@ describe('Pruebas con promesas', () => {
     test('getHeroeByIdAsync debe retornar un heroe async',(done) => {
         const id = 1;
 
-        /*Las pruebas son ejecutadas de manera secuencial no de manera asincrona*/
+        /*Las pruebas son ejecutadas de manera secuencial no de manera asincrona
+        El callback done nos ayuda a esperar que el proceso de la tarea asincrona termine*/
         getHeroeByIdAsync(id)
         .then(heroe => {
             expect(heroe).toBe(heroes[0]);
