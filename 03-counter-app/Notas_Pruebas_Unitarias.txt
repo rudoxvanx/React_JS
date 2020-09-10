@@ -58,6 +58,14 @@ Assert (Afirmar): Observar el comportamiento resultante
   Es más factible probar la RUTA CRITICA DE LA APLICACION
 
 
+  /*NOTAS SOBRE TAREAS ASINCRONAS */
+  --Todas las peticiones que se realizaran para postear información
+  --obtner datos, borrar información todo esto se hace con 
+  --procedimientos asincronos que no se hacen en el mismo hilo del tiempo
+  --que en el mismo momento que se ejecuta todo el codigo.
+
+
+
 
 
 	
