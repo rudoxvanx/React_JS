@@ -29,7 +29,7 @@ const PrimeraApp = ({saludo,subtitulo/*valor,subtitulo = "soy un subtitulo"*/}) 
     return ( 
             <>
               {/*<pre>{JSON.stringify(saludo,null,3)}</pre>*/}
-              <h1>{saludo}</h1>
+              <h1>{saludo}!!!!???</h1>
 
               <p>{subtitulo}</p>
             </>
