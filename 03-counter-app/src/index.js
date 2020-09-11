@@ -9,7 +9,9 @@ import './index.css';
 const divRoot = document.querySelector('#root');
 
 //ReactDOM.render(<PrimeraApp saludo="Hola mundo" valor={12345}  /> , divRoot);
-ReactDOM.render(<CounterApp />,divRoot);
+//ReactDOM.render(<CounterApp />,divRoot);
+
+ReactDOM.render(<PrimeraApp saludo={'Hola soy goku'}/>,divRoot);
 
 
 /*Usamos REACTDOM para renderizar ya que este nos permite
