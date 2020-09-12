@@ -5,6 +5,10 @@ import PropTypes from 'prop-types';
 const CounterApp = ({value = 10}) => {
 
     
+    /*La prueba que yo implemento no sera sobre el 
+    hook si no más bien de la interacción que tendra este
+    sobre mi componente*/
+
     //const [ nombre,setNombre ] = useState('Goku');
     //console.log(nombre,setNombre);
     //const state = useState();
